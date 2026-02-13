@@ -1,0 +1,1782 @@
+[
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$72pZCkBHwiIfRWGLbqwOub$uZV3GeWtEcxtWKqZR1hV3PqrbamV+SYint7WEqdFpCo=",
+    "last_login": "2026-02-13T11:02:06.853Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "admin@example.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-02-13T08:10:16.218Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$1000000$2Qg5Oi4jBRs5sqRbJWfZcw$EgeVo+dQTvM8/SY8Pyoc7bhv3OBJ5lb2FsTOjF1xRng=",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "testuser",
+    "first_name": "",
+    "last_name": "",
+    "email": "test@example.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-02-13T08:10:18.157Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "kpz4bvmqaa5q1y5v87iw6jhyfku6c2ra",
+  "fields": {
+    "session_data": ".eJxVjDsOwjAQRO_iGllex_Y6lPQ5g-Vdr0kAJVI-FeLuJFIKmHLem3mrlLe1T9sicxqKuipQl9-OMj9lPEB55PE-aZ7GdR5IH4o-6aK7qcjrdrp_B31e-n3tLcaKjRTxQIilpQaJrGUfuJrKLYFxDBHcHisAoQ2uigHkEMVl9fkC3Io3dQ:1vqqw2:xIGfn1BROoJsKoHcQLeS7-OocD3f6DmN0Uehyih845A",
+    "expire_date": "2026-02-27T11:02:06.867Z"
+  }
+},
+{
+  "model": "loans.loan",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "loan_name": "Home Loan",
+    "loan_type": "Housing",
+    "total_amount": "500000.00",
+    "interest_rate": "8.50",
+    "tenure_months": 24,
+    "emi_amount": "22727.84",
+    "start_date": "2025-12-15",
+    "status": "Active",
+    "created_at": "2026-02-13T08:10:20.362Z",
+    "updated_at": "2026-02-13T08:10:20.362Z"
+  }
+},
+{
+  "model": "loans.loan",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "loan_name": "iPhone 15",
+    "loan_type": "Personal",
+    "total_amount": "80000.00",
+    "interest_rate": "12.00",
+    "tenure_months": 12,
+    "emi_amount": "7107.90",
+    "start_date": "2026-01-14",
+    "status": "Active",
+    "created_at": "2026-02-13T08:10:21.247Z",
+    "updated_at": "2026-02-13T08:10:21.247Z"
+  }
+},
+{
+  "model": "loans.loan",
+  "pk": 4,
+  "fields": {
+    "user": 2,
+    "loan_name": "Past Personal Loan",
+    "loan_type": "Personal",
+    "total_amount": "100000.00",
+    "interest_rate": "12.00",
+    "tenure_months": 12,
+    "emi_amount": "8885.00",
+    "start_date": "2025-11-13",
+    "status": "Active",
+    "created_at": "2026-02-13T09:08:49.939Z",
+    "updated_at": "2026-02-13T09:08:49.939Z"
+  }
+},
+{
+  "model": "loans.loan",
+  "pk": 5,
+  "fields": {
+    "user": 2,
+    "loan_name": "College Studies",
+    "loan_type": "Education",
+    "total_amount": "200000.00",
+    "interest_rate": "10.00",
+    "tenure_months": 12,
+    "emi_amount": "17583.18",
+    "start_date": "2026-02-13",
+    "status": "Active",
+    "created_at": "2026-02-13T09:32:58.648Z",
+    "updated_at": "2026-02-13T09:32:58.648Z"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 1,
+  "fields": {
+    "loan": 1,
+    "emi_number": 1,
+    "due_date": "2025-12-15",
+    "paid_date": "2026-02-13",
+    "emi_amount": "22727.84",
+    "principal_component": "19186.17",
+    "interest_component": "3541.67",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "500000.00",
+    "outstanding_balance_after_payment": "480813.83",
+    "status": "PAID"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 2,
+  "fields": {
+    "loan": 1,
+    "emi_number": 2,
+    "due_date": "2026-01-15",
+    "paid_date": "2026-02-13",
+    "emi_amount": "22727.84",
+    "principal_component": "19322.08",
+    "interest_component": "3405.76",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "480813.83",
+    "outstanding_balance_after_payment": "461491.75",
+    "status": "PAID"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 3,
+  "fields": {
+    "loan": 1,
+    "emi_number": 3,
+    "due_date": "2026-02-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "19458.94",
+    "interest_component": "3268.90",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "461491.75",
+    "outstanding_balance_after_payment": "442032.81",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 4,
+  "fields": {
+    "loan": 1,
+    "emi_number": 4,
+    "due_date": "2026-03-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "19596.77",
+    "interest_component": "3131.07",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "442032.81",
+    "outstanding_balance_after_payment": "422436.04",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 5,
+  "fields": {
+    "loan": 1,
+    "emi_number": 5,
+    "due_date": "2026-04-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "19735.58",
+    "interest_component": "2992.26",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "422436.04",
+    "outstanding_balance_after_payment": "402700.46",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 6,
+  "fields": {
+    "loan": 1,
+    "emi_number": 6,
+    "due_date": "2026-05-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "19875.38",
+    "interest_component": "2852.46",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "402700.46",
+    "outstanding_balance_after_payment": "382825.08",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 7,
+  "fields": {
+    "loan": 1,
+    "emi_number": 7,
+    "due_date": "2026-06-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "20016.16",
+    "interest_component": "2711.68",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "382825.08",
+    "outstanding_balance_after_payment": "362808.92",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 8,
+  "fields": {
+    "loan": 1,
+    "emi_number": 8,
+    "due_date": "2026-07-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "20157.94",
+    "interest_component": "2569.90",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "362808.92",
+    "outstanding_balance_after_payment": "342650.98",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 9,
+  "fields": {
+    "loan": 1,
+    "emi_number": 9,
+    "due_date": "2026-08-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "20300.73",
+    "interest_component": "2427.11",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "342650.98",
+    "outstanding_balance_after_payment": "322350.25",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 10,
+  "fields": {
+    "loan": 1,
+    "emi_number": 10,
+    "due_date": "2026-09-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "20444.53",
+    "interest_component": "2283.31",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "322350.25",
+    "outstanding_balance_after_payment": "301905.72",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 11,
+  "fields": {
+    "loan": 1,
+    "emi_number": 11,
+    "due_date": "2026-10-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "20589.34",
+    "interest_component": "2138.50",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "301905.72",
+    "outstanding_balance_after_payment": "281316.38",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 12,
+  "fields": {
+    "loan": 1,
+    "emi_number": 12,
+    "due_date": "2026-11-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "20735.18",
+    "interest_component": "1992.66",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "281316.38",
+    "outstanding_balance_after_payment": "260581.20",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 13,
+  "fields": {
+    "loan": 1,
+    "emi_number": 13,
+    "due_date": "2026-12-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "20882.06",
+    "interest_component": "1845.78",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "260581.20",
+    "outstanding_balance_after_payment": "239699.14",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 14,
+  "fields": {
+    "loan": 1,
+    "emi_number": 14,
+    "due_date": "2027-01-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "21029.97",
+    "interest_component": "1697.87",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "239699.14",
+    "outstanding_balance_after_payment": "218669.17",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 15,
+  "fields": {
+    "loan": 1,
+    "emi_number": 15,
+    "due_date": "2027-02-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "21178.93",
+    "interest_component": "1548.91",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "218669.17",
+    "outstanding_balance_after_payment": "197490.24",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 16,
+  "fields": {
+    "loan": 1,
+    "emi_number": 16,
+    "due_date": "2027-03-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "21328.95",
+    "interest_component": "1398.89",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "197490.24",
+    "outstanding_balance_after_payment": "176161.29",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 17,
+  "fields": {
+    "loan": 1,
+    "emi_number": 17,
+    "due_date": "2027-04-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "21480.03",
+    "interest_component": "1247.81",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "176161.29",
+    "outstanding_balance_after_payment": "154681.26",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 18,
+  "fields": {
+    "loan": 1,
+    "emi_number": 18,
+    "due_date": "2027-05-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "21632.18",
+    "interest_component": "1095.66",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "154681.26",
+    "outstanding_balance_after_payment": "133049.08",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 19,
+  "fields": {
+    "loan": 1,
+    "emi_number": 19,
+    "due_date": "2027-06-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "21785.41",
+    "interest_component": "942.43",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "133049.08",
+    "outstanding_balance_after_payment": "111263.67",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 20,
+  "fields": {
+    "loan": 1,
+    "emi_number": 20,
+    "due_date": "2027-07-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "21939.72",
+    "interest_component": "788.12",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "111263.67",
+    "outstanding_balance_after_payment": "89323.95",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 21,
+  "fields": {
+    "loan": 1,
+    "emi_number": 21,
+    "due_date": "2027-08-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "22095.13",
+    "interest_component": "632.71",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "89323.95",
+    "outstanding_balance_after_payment": "67228.82",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 22,
+  "fields": {
+    "loan": 1,
+    "emi_number": 22,
+    "due_date": "2027-09-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "22251.64",
+    "interest_component": "476.20",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "67228.82",
+    "outstanding_balance_after_payment": "44977.18",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 23,
+  "fields": {
+    "loan": 1,
+    "emi_number": 23,
+    "due_date": "2027-10-15",
+    "paid_date": null,
+    "emi_amount": "22727.84",
+    "principal_component": "22409.25",
+    "interest_component": "318.59",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.84",
+    "outstanding_before_payment": "44977.18",
+    "outstanding_balance_after_payment": "22567.93",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 24,
+  "fields": {
+    "loan": 1,
+    "emi_number": 24,
+    "due_date": "2027-11-15",
+    "paid_date": null,
+    "emi_amount": "22727.79",
+    "principal_component": "22567.93",
+    "interest_component": "159.86",
+    "penalty_amount": "0.00",
+    "total_due_amount": "22727.79",
+    "outstanding_before_payment": "22567.93",
+    "outstanding_balance_after_payment": "0.00",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 25,
+  "fields": {
+    "loan": 2,
+    "emi_number": 1,
+    "due_date": "2026-01-14",
+    "paid_date": "2026-02-13",
+    "emi_amount": "7107.90",
+    "principal_component": "6307.90",
+    "interest_component": "800.00",
+    "penalty_amount": "0.00",
+    "total_due_amount": "7107.90",
+    "outstanding_before_payment": "80000.00",
+    "outstanding_balance_after_payment": "73692.10",
+    "status": "PAID"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 26,
+  "fields": {
+    "loan": 2,
+    "emi_number": 2,
+    "due_date": "2026-02-14",
+    "paid_date": "2026-02-13",
+    "emi_amount": "7107.90",
+    "principal_component": "6370.98",
+    "interest_component": "736.92",
+    "penalty_amount": "0.00",
+    "total_due_amount": "7107.90",
+    "outstanding_before_payment": "73692.10",
+    "outstanding_balance_after_payment": "67321.12",
+    "status": "PAID"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 27,
+  "fields": {
+    "loan": 2,
+    "emi_number": 3,
+    "due_date": "2026-03-14",
+    "paid_date": null,
+    "emi_amount": "7107.90",
+    "principal_component": "6434.69",
+    "interest_component": "673.21",
+    "penalty_amount": "0.00",
+    "total_due_amount": "7107.90",
+    "outstanding_before_payment": "67321.12",
+    "outstanding_balance_after_payment": "60886.43",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 28,
+  "fields": {
+    "loan": 2,
+    "emi_number": 4,
+    "due_date": "2026-04-14",
+    "paid_date": null,
+    "emi_amount": "7107.90",
+    "principal_component": "6499.04",
+    "interest_component": "608.86",
+    "penalty_amount": "0.00",
+    "total_due_amount": "7107.90",
+    "outstanding_before_payment": "60886.43",
+    "outstanding_balance_after_payment": "54387.39",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 29,
+  "fields": {
+    "loan": 2,
+    "emi_number": 5,
+    "due_date": "2026-05-14",
+    "paid_date": null,
+    "emi_amount": "7107.90",
+    "principal_component": "6564.03",
+    "interest_component": "543.87",
+    "penalty_amount": "0.00",
+    "total_due_amount": "7107.90",
+    "outstanding_before_payment": "54387.39",
+    "outstanding_balance_after_payment": "47823.36",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 30,
+  "fields": {
+    "loan": 2,
+    "emi_number": 6,
+    "due_date": "2026-06-14",
+    "paid_date": null,
+    "emi_amount": "7107.90",
+    "principal_component": "6629.67",
+    "interest_component": "478.23",
+    "penalty_amount": "0.00",
+    "total_due_amount": "7107.90",
+    "outstanding_before_payment": "47823.36",
+    "outstanding_balance_after_payment": "41193.69",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 31,
+  "fields": {
+    "loan": 2,
+    "emi_number": 7,
+    "due_date": "2026-07-14",
+    "paid_date": null,
+    "emi_amount": "7107.90",
+    "principal_component": "6695.96",
+    "interest_component": "411.94",
+    "penalty_amount": "0.00",
+    "total_due_amount": "7107.90",
+    "outstanding_before_payment": "41193.69",
+    "outstanding_balance_after_payment": "34497.73",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 32,
+  "fields": {
+    "loan": 2,
+    "emi_number": 8,
+    "due_date": "2026-08-14",
+    "paid_date": null,
+    "emi_amount": "7107.90",
+    "principal_component": "6762.92",
+    "interest_component": "344.98",
+    "penalty_amount": "0.00",
+    "total_due_amount": "7107.90",
+    "outstanding_before_payment": "34497.73",
+    "outstanding_balance_after_payment": "27734.81",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 33,
+  "fields": {
+    "loan": 2,
+    "emi_number": 9,
+    "due_date": "2026-09-14",
+    "paid_date": null,
+    "emi_amount": "7107.90",
+    "principal_component": "6830.55",
+    "interest_component": "277.35",
+    "penalty_amount": "0.00",
+    "total_due_amount": "7107.90",
+    "outstanding_before_payment": "27734.81",
+    "outstanding_balance_after_payment": "20904.26",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 34,
+  "fields": {
+    "loan": 2,
+    "emi_number": 10,
+    "due_date": "2026-10-14",
+    "paid_date": null,
+    "emi_amount": "7107.90",
+    "principal_component": "6898.86",
+    "interest_component": "209.04",
+    "penalty_amount": "0.00",
+    "total_due_amount": "7107.90",
+    "outstanding_before_payment": "20904.26",
+    "outstanding_balance_after_payment": "14005.40",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 35,
+  "fields": {
+    "loan": 2,
+    "emi_number": 11,
+    "due_date": "2026-11-14",
+    "paid_date": null,
+    "emi_amount": "7107.90",
+    "principal_component": "6967.85",
+    "interest_component": "140.05",
+    "penalty_amount": "0.00",
+    "total_due_amount": "7107.90",
+    "outstanding_before_payment": "14005.40",
+    "outstanding_balance_after_payment": "7037.55",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 36,
+  "fields": {
+    "loan": 2,
+    "emi_number": 12,
+    "due_date": "2026-12-14",
+    "paid_date": null,
+    "emi_amount": "7107.93",
+    "principal_component": "7037.55",
+    "interest_component": "70.38",
+    "penalty_amount": "0.00",
+    "total_due_amount": "7107.93",
+    "outstanding_before_payment": "7037.55",
+    "outstanding_balance_after_payment": "0.00",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 37,
+  "fields": {
+    "loan": 4,
+    "emi_number": 1,
+    "due_date": "2025-12-13",
+    "paid_date": "2025-12-13",
+    "emi_amount": "8885.00",
+    "principal_component": "7885.00",
+    "interest_component": "1000.00",
+    "penalty_amount": "0.00",
+    "total_due_amount": "0.00",
+    "outstanding_before_payment": "100000.00",
+    "outstanding_balance_after_payment": "92115.00",
+    "status": "PAID"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 38,
+  "fields": {
+    "loan": 4,
+    "emi_number": 2,
+    "due_date": "2026-01-13",
+    "paid_date": "2026-02-13",
+    "emi_amount": "8885.00",
+    "principal_component": "7963.85",
+    "interest_component": "921.15",
+    "penalty_amount": "200.00",
+    "total_due_amount": "9085.00",
+    "outstanding_before_payment": "92115.00",
+    "outstanding_balance_after_payment": "84151.15",
+    "status": "PAID"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 39,
+  "fields": {
+    "loan": 4,
+    "emi_number": 3,
+    "due_date": "2026-02-13",
+    "paid_date": null,
+    "emi_amount": "8885.00",
+    "principal_component": "8043.49",
+    "interest_component": "841.51",
+    "penalty_amount": "0.00",
+    "total_due_amount": "0.00",
+    "outstanding_before_payment": "84151.15",
+    "outstanding_balance_after_payment": "76107.66",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 40,
+  "fields": {
+    "loan": 5,
+    "emi_number": 1,
+    "due_date": "2026-02-13",
+    "paid_date": null,
+    "emi_amount": "17583.18",
+    "principal_component": "15916.51",
+    "interest_component": "1666.67",
+    "penalty_amount": "0.00",
+    "total_due_amount": "17583.18",
+    "outstanding_before_payment": "200000.00",
+    "outstanding_balance_after_payment": "184083.49",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 41,
+  "fields": {
+    "loan": 5,
+    "emi_number": 2,
+    "due_date": "2026-03-13",
+    "paid_date": null,
+    "emi_amount": "17583.18",
+    "principal_component": "16049.15",
+    "interest_component": "1534.03",
+    "penalty_amount": "0.00",
+    "total_due_amount": "17583.18",
+    "outstanding_before_payment": "184083.49",
+    "outstanding_balance_after_payment": "168034.34",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 42,
+  "fields": {
+    "loan": 5,
+    "emi_number": 3,
+    "due_date": "2026-04-13",
+    "paid_date": null,
+    "emi_amount": "17583.18",
+    "principal_component": "16182.89",
+    "interest_component": "1400.29",
+    "penalty_amount": "0.00",
+    "total_due_amount": "17583.18",
+    "outstanding_before_payment": "168034.34",
+    "outstanding_balance_after_payment": "151851.45",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 43,
+  "fields": {
+    "loan": 5,
+    "emi_number": 4,
+    "due_date": "2026-05-13",
+    "paid_date": null,
+    "emi_amount": "17583.18",
+    "principal_component": "16317.75",
+    "interest_component": "1265.43",
+    "penalty_amount": "0.00",
+    "total_due_amount": "17583.18",
+    "outstanding_before_payment": "151851.45",
+    "outstanding_balance_after_payment": "135533.70",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 44,
+  "fields": {
+    "loan": 5,
+    "emi_number": 5,
+    "due_date": "2026-06-13",
+    "paid_date": null,
+    "emi_amount": "17583.18",
+    "principal_component": "16453.73",
+    "interest_component": "1129.45",
+    "penalty_amount": "0.00",
+    "total_due_amount": "17583.18",
+    "outstanding_before_payment": "135533.70",
+    "outstanding_balance_after_payment": "119079.97",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 45,
+  "fields": {
+    "loan": 5,
+    "emi_number": 6,
+    "due_date": "2026-07-13",
+    "paid_date": null,
+    "emi_amount": "17583.18",
+    "principal_component": "16590.85",
+    "interest_component": "992.33",
+    "penalty_amount": "0.00",
+    "total_due_amount": "17583.18",
+    "outstanding_before_payment": "119079.97",
+    "outstanding_balance_after_payment": "102489.12",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 46,
+  "fields": {
+    "loan": 5,
+    "emi_number": 7,
+    "due_date": "2026-08-13",
+    "paid_date": null,
+    "emi_amount": "17583.18",
+    "principal_component": "16729.10",
+    "interest_component": "854.08",
+    "penalty_amount": "0.00",
+    "total_due_amount": "17583.18",
+    "outstanding_before_payment": "102489.12",
+    "outstanding_balance_after_payment": "85760.02",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 47,
+  "fields": {
+    "loan": 5,
+    "emi_number": 8,
+    "due_date": "2026-09-13",
+    "paid_date": null,
+    "emi_amount": "17583.18",
+    "principal_component": "16868.51",
+    "interest_component": "714.67",
+    "penalty_amount": "0.00",
+    "total_due_amount": "17583.18",
+    "outstanding_before_payment": "85760.02",
+    "outstanding_balance_after_payment": "68891.51",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 48,
+  "fields": {
+    "loan": 5,
+    "emi_number": 9,
+    "due_date": "2026-10-13",
+    "paid_date": null,
+    "emi_amount": "17583.18",
+    "principal_component": "17009.08",
+    "interest_component": "574.10",
+    "penalty_amount": "0.00",
+    "total_due_amount": "17583.18",
+    "outstanding_before_payment": "68891.51",
+    "outstanding_balance_after_payment": "51882.43",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 49,
+  "fields": {
+    "loan": 5,
+    "emi_number": 10,
+    "due_date": "2026-11-13",
+    "paid_date": null,
+    "emi_amount": "17583.18",
+    "principal_component": "17150.83",
+    "interest_component": "432.35",
+    "penalty_amount": "0.00",
+    "total_due_amount": "17583.18",
+    "outstanding_before_payment": "51882.43",
+    "outstanding_balance_after_payment": "34731.60",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 50,
+  "fields": {
+    "loan": 5,
+    "emi_number": 11,
+    "due_date": "2026-12-13",
+    "paid_date": null,
+    "emi_amount": "17583.18",
+    "principal_component": "17293.75",
+    "interest_component": "289.43",
+    "penalty_amount": "0.00",
+    "total_due_amount": "17583.18",
+    "outstanding_before_payment": "34731.60",
+    "outstanding_balance_after_payment": "17437.85",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "payments.payment",
+  "pk": 51,
+  "fields": {
+    "loan": 5,
+    "emi_number": 12,
+    "due_date": "2027-01-13",
+    "paid_date": null,
+    "emi_amount": "17583.17",
+    "principal_component": "17437.85",
+    "interest_component": "145.32",
+    "penalty_amount": "0.00",
+    "total_due_amount": "17583.17",
+    "outstanding_before_payment": "17437.85",
+    "outstanding_balance_after_payment": "0.00",
+    "status": "PENDING"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 1,
+  "fields": {
+    "user": 2,
+    "payment": 1,
+    "reminder_date": "2025-12-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2025-12-15.\n\nOutstanding Loan Balance: ₹480813.83\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.481Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 2,
+  "fields": {
+    "user": 2,
+    "payment": 2,
+    "reminder_date": "2026-01-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2026-01-15.\n\nOutstanding Loan Balance: ₹461491.75\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.517Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 3,
+  "fields": {
+    "user": 2,
+    "payment": 3,
+    "reminder_date": "2026-02-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2026-02-15.\n\nOutstanding Loan Balance: ₹442032.81\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.555Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 4,
+  "fields": {
+    "user": 2,
+    "payment": 4,
+    "reminder_date": "2026-03-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2026-03-15.\n\nOutstanding Loan Balance: ₹422436.04\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.597Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 5,
+  "fields": {
+    "user": 2,
+    "payment": 5,
+    "reminder_date": "2026-04-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2026-04-15.\n\nOutstanding Loan Balance: ₹402700.46\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.629Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 6,
+  "fields": {
+    "user": 2,
+    "payment": 6,
+    "reminder_date": "2026-05-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2026-05-15.\n\nOutstanding Loan Balance: ₹382825.08\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.660Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 7,
+  "fields": {
+    "user": 2,
+    "payment": 7,
+    "reminder_date": "2026-06-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2026-06-15.\n\nOutstanding Loan Balance: ₹362808.92\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.693Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 8,
+  "fields": {
+    "user": 2,
+    "payment": 8,
+    "reminder_date": "2026-07-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2026-07-15.\n\nOutstanding Loan Balance: ₹342650.98\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.728Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 9,
+  "fields": {
+    "user": 2,
+    "payment": 9,
+    "reminder_date": "2026-08-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2026-08-15.\n\nOutstanding Loan Balance: ₹322350.25\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.763Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 10,
+  "fields": {
+    "user": 2,
+    "payment": 10,
+    "reminder_date": "2026-09-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2026-09-15.\n\nOutstanding Loan Balance: ₹301905.72\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.794Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 11,
+  "fields": {
+    "user": 2,
+    "payment": 11,
+    "reminder_date": "2026-10-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2026-10-15.\n\nOutstanding Loan Balance: ₹281316.38\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.817Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 12,
+  "fields": {
+    "user": 2,
+    "payment": 12,
+    "reminder_date": "2026-11-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2026-11-15.\n\nOutstanding Loan Balance: ₹260581.20\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.853Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 13,
+  "fields": {
+    "user": 2,
+    "payment": 13,
+    "reminder_date": "2026-12-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2026-12-15.\n\nOutstanding Loan Balance: ₹239699.14\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.885Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 14,
+  "fields": {
+    "user": 2,
+    "payment": 14,
+    "reminder_date": "2027-01-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2027-01-15.\n\nOutstanding Loan Balance: ₹218669.17\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.917Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 15,
+  "fields": {
+    "user": 2,
+    "payment": 15,
+    "reminder_date": "2027-02-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2027-02-15.\n\nOutstanding Loan Balance: ₹197490.24\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.943Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 16,
+  "fields": {
+    "user": 2,
+    "payment": 16,
+    "reminder_date": "2027-03-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2027-03-15.\n\nOutstanding Loan Balance: ₹176161.29\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:20.974Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 17,
+  "fields": {
+    "user": 2,
+    "payment": 17,
+    "reminder_date": "2027-04-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2027-04-15.\n\nOutstanding Loan Balance: ₹154681.26\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.004Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 18,
+  "fields": {
+    "user": 2,
+    "payment": 18,
+    "reminder_date": "2027-05-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2027-05-15.\n\nOutstanding Loan Balance: ₹133049.08\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.039Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 19,
+  "fields": {
+    "user": 2,
+    "payment": 19,
+    "reminder_date": "2027-06-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2027-06-15.\n\nOutstanding Loan Balance: ₹111263.67\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.067Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 20,
+  "fields": {
+    "user": 2,
+    "payment": 20,
+    "reminder_date": "2027-07-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2027-07-15.\n\nOutstanding Loan Balance: ₹89323.95\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.107Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 21,
+  "fields": {
+    "user": 2,
+    "payment": 21,
+    "reminder_date": "2027-08-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2027-08-15.\n\nOutstanding Loan Balance: ₹67228.82\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.135Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 22,
+  "fields": {
+    "user": 2,
+    "payment": 22,
+    "reminder_date": "2027-09-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2027-09-15.\n\nOutstanding Loan Balance: ₹44977.18\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.170Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 23,
+  "fields": {
+    "user": 2,
+    "payment": 23,
+    "reminder_date": "2027-10-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.84 for Home Loan is due on 2027-10-15.\n\nOutstanding Loan Balance: ₹22567.93\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.194Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 24,
+  "fields": {
+    "user": 2,
+    "payment": 24,
+    "reminder_date": "2027-11-15",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹22727.79 for Home Loan is due on 2027-11-15.\n\nOutstanding Loan Balance: ₹0.00\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.231Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 25,
+  "fields": {
+    "user": 2,
+    "payment": 25,
+    "reminder_date": "2026-01-14",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹7107.90 for iPhone 15 is due on 2026-01-14.\n\nOutstanding Loan Balance: ₹73692.10\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.276Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 26,
+  "fields": {
+    "user": 2,
+    "payment": 26,
+    "reminder_date": "2026-02-14",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹7107.90 for iPhone 15 is due on 2026-02-14.\n\nOutstanding Loan Balance: ₹67321.12\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.307Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 27,
+  "fields": {
+    "user": 2,
+    "payment": 27,
+    "reminder_date": "2026-03-14",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹7107.90 for iPhone 15 is due on 2026-03-14.\n\nOutstanding Loan Balance: ₹60886.43\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.344Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 28,
+  "fields": {
+    "user": 2,
+    "payment": 28,
+    "reminder_date": "2026-04-14",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹7107.90 for iPhone 15 is due on 2026-04-14.\n\nOutstanding Loan Balance: ₹54387.39\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.436Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 29,
+  "fields": {
+    "user": 2,
+    "payment": 29,
+    "reminder_date": "2026-05-14",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹7107.90 for iPhone 15 is due on 2026-05-14.\n\nOutstanding Loan Balance: ₹47823.36\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.476Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 30,
+  "fields": {
+    "user": 2,
+    "payment": 30,
+    "reminder_date": "2026-06-14",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹7107.90 for iPhone 15 is due on 2026-06-14.\n\nOutstanding Loan Balance: ₹41193.69\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.520Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 31,
+  "fields": {
+    "user": 2,
+    "payment": 31,
+    "reminder_date": "2026-07-14",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹7107.90 for iPhone 15 is due on 2026-07-14.\n\nOutstanding Loan Balance: ₹34497.73\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.559Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 32,
+  "fields": {
+    "user": 2,
+    "payment": 32,
+    "reminder_date": "2026-08-14",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹7107.90 for iPhone 15 is due on 2026-08-14.\n\nOutstanding Loan Balance: ₹27734.81\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.611Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 33,
+  "fields": {
+    "user": 2,
+    "payment": 33,
+    "reminder_date": "2026-09-14",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹7107.90 for iPhone 15 is due on 2026-09-14.\n\nOutstanding Loan Balance: ₹20904.26\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.642Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 34,
+  "fields": {
+    "user": 2,
+    "payment": 34,
+    "reminder_date": "2026-10-14",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹7107.90 for iPhone 15 is due on 2026-10-14.\n\nOutstanding Loan Balance: ₹14005.40\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.674Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 35,
+  "fields": {
+    "user": 2,
+    "payment": 35,
+    "reminder_date": "2026-11-14",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹7107.90 for iPhone 15 is due on 2026-11-14.\n\nOutstanding Loan Balance: ₹7037.55\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.708Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 36,
+  "fields": {
+    "user": 2,
+    "payment": 36,
+    "reminder_date": "2026-12-14",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹7107.93 for iPhone 15 is due on 2026-12-14.\n\nOutstanding Loan Balance: ₹0.00\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T08:10:21.745Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 37,
+  "fields": {
+    "user": 2,
+    "payment": 40,
+    "reminder_date": "2026-02-13",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹17583.18 for College Studies is due on 2026-02-13.\n\nOutstanding Loan Balance: ₹184083.49\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T09:32:58.680Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 38,
+  "fields": {
+    "user": 2,
+    "payment": 41,
+    "reminder_date": "2026-03-13",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹17583.18 for College Studies is due on 2026-03-13.\n\nOutstanding Loan Balance: ₹168034.34\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T09:32:58.708Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 39,
+  "fields": {
+    "user": 2,
+    "payment": 42,
+    "reminder_date": "2026-04-13",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹17583.18 for College Studies is due on 2026-04-13.\n\nOutstanding Loan Balance: ₹151851.45\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T09:32:58.749Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 40,
+  "fields": {
+    "user": 2,
+    "payment": 43,
+    "reminder_date": "2026-05-13",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹17583.18 for College Studies is due on 2026-05-13.\n\nOutstanding Loan Balance: ₹135533.70\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T09:32:58.787Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 41,
+  "fields": {
+    "user": 2,
+    "payment": 44,
+    "reminder_date": "2026-06-13",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹17583.18 for College Studies is due on 2026-06-13.\n\nOutstanding Loan Balance: ₹119079.97\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T09:32:58.817Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 42,
+  "fields": {
+    "user": 2,
+    "payment": 45,
+    "reminder_date": "2026-07-13",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹17583.18 for College Studies is due on 2026-07-13.\n\nOutstanding Loan Balance: ₹102489.12\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T09:32:58.845Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 43,
+  "fields": {
+    "user": 2,
+    "payment": 46,
+    "reminder_date": "2026-08-13",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹17583.18 for College Studies is due on 2026-08-13.\n\nOutstanding Loan Balance: ₹85760.02\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T09:32:58.877Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 44,
+  "fields": {
+    "user": 2,
+    "payment": 47,
+    "reminder_date": "2026-09-13",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹17583.18 for College Studies is due on 2026-09-13.\n\nOutstanding Loan Balance: ₹68891.51\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T09:32:58.907Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 45,
+  "fields": {
+    "user": 2,
+    "payment": 48,
+    "reminder_date": "2026-10-13",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹17583.18 for College Studies is due on 2026-10-13.\n\nOutstanding Loan Balance: ₹51882.43\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T09:32:58.942Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 46,
+  "fields": {
+    "user": 2,
+    "payment": 49,
+    "reminder_date": "2026-11-13",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹17583.18 for College Studies is due on 2026-11-13.\n\nOutstanding Loan Balance: ₹34731.60\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T09:32:58.972Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 47,
+  "fields": {
+    "user": 2,
+    "payment": 50,
+    "reminder_date": "2026-12-13",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹17583.18 for College Studies is due on 2026-12-13.\n\nOutstanding Loan Balance: ₹17437.85\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T09:32:58.999Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 48,
+  "fields": {
+    "user": 2,
+    "payment": 51,
+    "reminder_date": "2027-01-13",
+    "message": "Dear User,\n\nThis is a reminder that your EMI of ₹17583.17 for College Studies is due on 2027-01-13.\n\nOutstanding Loan Balance: ₹0.00\n\nPlease make payment before due date to avoid 2% penalty.\n\nRegards,\nEMI Tracker Team",
+    "reminder_type": "EMAIL",
+    "is_sent": false,
+    "sent_at": null,
+    "error_message": null,
+    "created_at": "2026-02-13T09:32:59.032Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 49,
+  "fields": {
+    "user": 2,
+    "payment": 39,
+    "reminder_date": "2026-02-13",
+    "message": "",
+    "reminder_type": "EMAIL",
+    "is_sent": true,
+    "sent_at": "2026-02-13T12:35:15.521Z",
+    "error_message": null,
+    "created_at": "2026-02-13T12:35:15.522Z"
+  }
+},
+{
+  "model": "reminders.reminder",
+  "pk": 50,
+  "fields": {
+    "user": 2,
+    "payment": 40,
+    "reminder_date": "2026-02-13",
+    "message": "",
+    "reminder_type": "EMAIL",
+    "is_sent": true,
+    "sent_at": "2026-02-13T12:35:19.904Z",
+    "error_message": null,
+    "created_at": "2026-02-13T12:35:19.904Z"
+  }
+}
+]
